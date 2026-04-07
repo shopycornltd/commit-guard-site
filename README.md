@@ -66,4 +66,4 @@ To use it:
 ## Support
 
 - Vendor: Shopycorn Ltd
-- Contact: [shopycornltd@gmail.com](mailto:shopycornltd@gmail.com)
+- Contact: [support@shopycorn.co.uk](mailto:support@shopycorn.co.uk)
