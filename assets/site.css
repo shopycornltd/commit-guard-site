@@ -73,6 +73,21 @@ a {
   gap: 12px;
 }
 
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.brand-logo img {
+  width: 114%;
+  height: 114%;
+  max-width: none;
+  margin: -7%;
+}
+
 .brand span {
   display: grid;
 }
@@ -94,6 +109,10 @@ a {
   gap: 16px;
   color: var(--muted);
   font-size: 14px;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--text);
 }
 
 .site-nav a:hover,
@@ -365,6 +384,13 @@ h3 {
 
 .brand-footer strong {
   font-size: 15px;
+}
+
+.brand-footer .brand-logo {
+  width: 40px;
+  height: 40px;
+  flex-basis: 40px;
+  border-radius: 14px;
 }
 
 .legal-shell {
