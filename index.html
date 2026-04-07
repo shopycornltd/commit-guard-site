@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Commit Guard | Workflow-Driven AI Code Review for IntelliJ</title>
+    <meta
+      name="description"
+      content="Commit Guard is a workflow-driven AI code review plugin for IntelliJ with local Ollama support, cloud providers, terminal commit gating, workflow authoring, and review telemetry."
+    />
+    <link rel="stylesheet" href="./assets/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="./">
+          <img src="./assets/commit-guard-logo.svg" alt="Commit Guard logo" width="44" height="44" />
+          <span>
+            <strong>Commit Guard</strong>
+            <em>by Shopycorn Ltd</em>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="#features">Features</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#plans">Plans</a>
+          <a href="./eula/">EULA</a>
+          <a href="./privacy/">Privacy</a>
+          <a href="https://github.com/shopycornltd/commit-guard-ai">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-band">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">JetBrains Marketplace | Free + Platinum</div>
+            <h1>AI code review that follows your workflow, not the other way around.</h1>
+            <p class="lede">
+              Commit Guard brings workflow-driven review, terminal commit gating, model routing, and review telemetry
+              into IntelliJ. Review pending changes, commits, folders, and staged terminal commits with the same engine.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button" href="https://plugins.jetbrains.com/">View on JetBrains Marketplace</a>
+              <a class="button secondary" href="https://github.com/shopycornltd/commit-guard-ai">View repository</a>
+            </div>
+
+            <ul class="hero-points">
+              <li>Local-first review with Ollama CLI</li>
+              <li>Cloud-backed providers and role-based model selection</li>
+              <li>Shared workflow engine across IntelliJ, terminal, and debug views</li>
+            </ul>
+          </div>
+
+          <div class="hero-media">
+            <div class="promo-frame">
+              <img src="./assets/hero.png" alt="Commit Guard promo collage showing review, workflow, and terminal gating" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">What It Does</div>
+            <h2>One review engine across IDE workflows, terminal gates, and legal-grade release prep.</h2>
+            <p>
+              Commit Guard is built for teams that want visibility and control, not just one more AI prompt box.
+            </p>
+          </div>
+
+          <div class="card-grid feature-grid">
+            <article class="info-card">
+              <h3>Review with structure</h3>
+              <p>
+                Run workflow stages for intake, classification, policy checks, AI review, verification, and output generation.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Gate commits consistently</h3>
+              <p>
+                Use the same workflow logic inside IntelliJ and from terminal-driven Git commits through the terminal commit gate.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>See what actually happened</h3>
+              <p>
+                Debug provider calls, daemon health, workflow execution, and handoff-memory compaction with real telemetry.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Scale from local to cloud</h3>
+              <p>
+                Start with local Ollama and move to cloud providers, advanced workflows, and workflow authoring when needed.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section section-contrast">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">Product Views</div>
+            <h2>Built to look operational, not mysterious.</h2>
+            <p>
+              Findings, workflow steps, debug dashboards, and terminal gating all stay connected so teams can trace decisions quickly.
+            </p>
+          </div>
+
+          <div class="gallery-grid">
+            <article class="gallery-card gallery-card-wide">
+              <img src="./assets/review-overview.png" alt="Commit Guard review overview inside IntelliJ" />
+              <div class="gallery-copy">
+                <h3>Review overview</h3>
+                <p>See findings, workflow stages, selected provider roles, and final review outputs in one place.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <img src="./assets/terminal-commit-gate.png" alt="Commit Guard terminal commit gate output" />
+              <div class="gallery-copy">
+                <h3>Terminal commit gate</h3>
+                <p>Surface workflow progress directly in the terminal when commit hooks are enforcing policy.</p>
+              </div>
+            </article>
+
+            <article class="gallery-card">
+              <img src="./assets/workflow-studio.png" alt="Commit Guard workflow studio" />
+              <div class="gallery-copy">
+                <h3>Workflow Studio</h3>
+                <p>Author and inspect stage-based review workflows visually inside IntelliJ.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="plans" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div class="eyebrow">Plans</div>
+            <h2>Start local. Grow into workflow automation.</h2>
+          </div>
+
+          <div class="card-grid plan-grid">
+            <article class="plan-card">
+              <div class="plan-tier">Free</div>
+              <h3>Local-first AI review</h3>
+              <ul>
+                <li>Ollama CLI provider</li>
+                <li>Core AI Review workflow</li>
+                <li>Manual review in the tool window</li>
+              </ul>
+            </article>
+
+            <article class="plan-card featured-plan">
+              <div class="plan-tier">Platinum</div>
+              <h3>Full review platform</h3>
+              <ul>
+                <li>All supported providers</li>
+                <li>Advanced workflows and specialist reviews</li>
+                <li>Daemon, terminal gate, debug dashboard, and workflow authoring</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="cta-panel">
+            <div>
+              <h3>Public legal and support pages</h3>
+              <p>This public site hosts the Developer EULA, Privacy Notice, and marketing pages required for Marketplace publication.</p>
+            </div>
+            <div class="hero-actions">
+              <a class="button" href="./eula/">Developer EULA</a>
+              <a class="button secondary" href="./privacy/">Privacy Notice</a>
+              <a class="button secondary" href="mailto:shopycornltd@gmail.com">Contact support</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand brand-footer" href="./">
+            <img src="./assets/commit-guard-logo.svg" alt="" width="36" height="36" />
+            <span>
+              <strong>Commit Guard</strong>
+              <em>Shopycorn Ltd</em>
+            </span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="./eula/">EULA</a>
+          <a href="./privacy/">Privacy</a>
+          <a href="mailto:shopycornltd@gmail.com">Support</a>
+          <a href="https://github.com/shopycornltd/commit-guard-ai">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
