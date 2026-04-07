@@ -357,6 +357,12 @@ h3 {
   color: var(--muted);
 }
 
+.footer-copy {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .brand-footer strong {
   font-size: 15px;
 }
