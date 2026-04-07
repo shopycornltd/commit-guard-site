@@ -6,7 +6,7 @@
     <title>Commit Guard | Workflow-Driven AI Code Review for IntelliJ</title>
     <meta
       name="description"
-      content="Commit Guard is a workflow-driven AI code review plugin for IntelliJ with local Ollama support, cloud providers, terminal commit gating, workflow authoring, and review telemetry."
+      content="Commit Guard is a workflow-driven AI code review plugin for IntelliJ with commit message generation, local Ollama support, cloud providers, terminal commit gating, workflow authoring, and review telemetry."
     />
     <link rel="stylesheet" href="./assets/site.css" />
   </head>
@@ -41,8 +41,9 @@
             <div class="eyebrow">JetBrains Marketplace | Free + Platinum</div>
             <h1>AI code review that follows your workflow, not the other way around.</h1>
             <p class="lede">
-              Commit Guard brings workflow-driven review, terminal commit gating, model routing, and review telemetry
-              into IntelliJ. Review pending changes, commits, folders, and staged terminal commits with the same engine.
+              Commit Guard brings workflow-driven review, commit message generation, terminal commit gating, model
+              routing, and review telemetry into IntelliJ. Review pending changes, commits, folders, and staged terminal
+              commits with the same engine.
             </p>
 
             <div class="hero-actions">
@@ -51,7 +52,7 @@
 
             <ul class="hero-points">
               <li>Local-first review with Ollama CLI</li>
-              <li>Cloud-backed providers and role-based model selection</li>
+              <li>Generate commit messages in IntelliJ and prefill blank terminal commit messages when managed hooks are active</li>
               <li>Shared workflow engine across IntelliJ, terminal, and debug views</li>
             </ul>
           </div>
@@ -68,7 +69,7 @@
         <div class="container">
           <div class="section-heading">
             <div class="eyebrow">What It Does</div>
-            <h2>One review engine across IDE workflows, terminal gates, and legal-grade release prep.</h2>
+            <h2>One review engine across IDE workflows, commit messages, terminal gates, and release prep.</h2>
             <p>
               Commit Guard is built for teams that want visibility and control, not just one more AI prompt box.
             </p>
@@ -88,9 +89,9 @@
               </p>
             </article>
             <article class="info-card">
-              <h3>See what actually happened</h3>
+              <h3>Draft commit messages fast</h3>
               <p>
-                Debug provider calls, daemon health, workflow execution, and handoff-memory compaction with real telemetry.
+                Generate commit messages from included or staged changes in the IDE, and prefill blank terminal commit messages when the managed hook path is active.
               </p>
             </article>
             <article class="info-card">
@@ -126,7 +127,7 @@
               <img src="./assets/terminal-commit-gate.png" alt="Commit Guard terminal commit gate output" />
               <div class="gallery-copy">
                 <h3>Terminal commit gate</h3>
-                <p>Surface workflow progress directly in the terminal when commit hooks are enforcing policy.</p>
+                <p>Surface workflow progress directly in the terminal and prefill blank commit messages from the staged diff when hooks are active.</p>
               </div>
             </article>
 
@@ -156,6 +157,7 @@
                 <li>Ollama CLI provider</li>
                 <li>Core AI Review workflow</li>
                 <li>Manual review in the tool window</li>
+                <li>Commit message generation in the IntelliJ commit UI</li>
               </ul>
             </article>
 
@@ -165,7 +167,7 @@
               <ul>
                 <li>All supported providers</li>
                 <li>Advanced workflows and specialist reviews</li>
-                <li>Daemon, terminal gate, debug dashboard, and workflow authoring</li>
+                <li>Daemon, terminal gate, terminal commit-message prefills, debug dashboard, and workflow authoring</li>
               </ul>
             </article>
           </div>
