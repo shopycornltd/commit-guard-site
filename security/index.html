@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Commit Guard Security</title>
+    <meta
+      name="description"
+      content="How to report security issues in Commit Guard, what versions are supported, and how Shopycorn Ltd handles vulnerability reports."
+    />
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="../">
+          <img src="../assets/commit-guard-logo.svg" alt="Commit Guard logo" width="44" height="44" />
+          <span>
+            <strong>Commit Guard</strong>
+            <em>by Shopycorn Ltd</em>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="../">Home</a>
+          <a href="../#features">Features</a>
+          <a href="../#plans">Plans</a>
+          <a href="../eula/">EULA</a>
+          <a href="../privacy/">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="legal legal-shell">
+      <div class="container">
+        <section class="legal-hero">
+          <div class="eyebrow">Security</div>
+          <h1>Commit Guard Security</h1>
+          <p class="lede">
+            This page explains how to report security issues in Commit Guard, which release path is supported, and what to expect from Shopycorn Ltd during triage.
+          </p>
+          <div class="meta">
+            <span>Vendor: Shopycorn Ltd</span>
+            <span>Last updated: 7 April 2026</span>
+            <span><a href="mailto:shopycornltd@gmail.com">shopycornltd@gmail.com</a></span>
+          </div>
+        </section>
+
+        <section class="legal-panel">
+          <nav class="nav">
+            <a href="../">Home</a>
+            <a href="#supported">Supported Versions</a>
+            <a href="#reporting">Reporting</a>
+            <a href="#scope">What to Report</a>
+            <a href="#expectations">What to Expect</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <p>
+            Commit Guard can process source code, commit diffs, workflow metadata, provider configuration, and model outputs. Because of that, security issues affecting review data, secrets, workflow execution, or provider behavior matter.
+          </p>
+
+          <h2 id="supported">1. Supported Versions</h2>
+          <p>Security fixes are focused on the current Marketplace release line.</p>
+          <ul>
+            <li>Latest public Marketplace release: supported</li>
+            <li>Previous release line, when still active: best effort</li>
+            <li>Development snapshots, forks, and unpublished local builds: not supported release targets</li>
+          </ul>
+
+          <h2 id="scope">2. What to Report</h2>
+          <p>Please report issues that could affect:</p>
+          <ul>
+            <li>exposure of secrets, API keys, or provider credentials</li>
+            <li>unintended transmission of repository content or review data</li>
+            <li>unsafe command execution, hook behavior, or local process interaction</li>
+            <li>workflow or commit-gate bypass with real security impact</li>
+            <li>provider or integration misuse that changes where code or telemetry is sent</li>
+          </ul>
+          <p>General bugs, AI false positives, or UX problems without security impact should be reported through normal support channels instead.</p>
+
+          <h2 id="reporting">3. How to Report</h2>
+          <p>Please report security issues privately by email:</p>
+          <ul>
+            <li><a href="mailto:shopycornltd@gmail.com">shopycornltd@gmail.com</a></li>
+          </ul>
+          <p>Use a subject line like <code>Commit Guard Security Report</code> and include:</p>
+          <ul>
+            <li>affected version</li>
+            <li>IntelliJ IDE version and operating system</li>
+            <li>steps to reproduce</li>
+            <li>impact and affected provider or integration, if any</li>
+            <li>proof of concept, with secrets redacted where possible</li>
+          </ul>
+          <p>Do not open public GitHub issues for undisclosed security vulnerabilities.</p>
+
+          <h2 id="expectations">4. What to Expect</h2>
+          <p>We aim to:</p>
+          <ul>
+            <li>acknowledge initial reports within 5 business days</li>
+            <li>confirm whether we can reproduce and triage the issue as quickly as practical</li>
+            <li>coordinate disclosure once a fix or mitigation is available</li>
+          </ul>
+          <p>
+            Some reports may depend on third-party services such as Ollama, OpenAI, GitHub services, or Sonatype Nexus IQ. In those cases, we may coordinate with the vendor or ask you to report directly to the affected platform when the issue is outside Commit Guard itself.
+          </p>
+
+          <h2>5. Safe Reporting</h2>
+          <p>
+            If you act in good faith, avoid privacy violations, service disruption, or unnecessary data exposure, and give us a reasonable opportunity to investigate before public disclosure, we will treat the report as a good-faith effort to improve the product.
+          </p>
+
+          <h2 id="contact">6. Contact</h2>
+          <p>
+            Shopycorn Ltd<br />
+            <a href="mailto:shopycornltd@gmail.com">shopycornltd@gmail.com</a>
+          </p>
+
+          <p class="footer">
+            For the full repository security policy, see the private product repository maintainers' documentation. For legal terms, see the <a href="../eula/">Developer EULA</a>.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

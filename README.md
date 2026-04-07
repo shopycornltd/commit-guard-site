@@ -7,6 +7,7 @@ It exists separately from the private product repository so we can keep the plug
 - a public product landing page
 - the Developer EULA
 - the Privacy Notice
+- the public security policy summary
 - JetBrains Marketplace-friendly public links
 
 ## Live Site
@@ -16,6 +17,7 @@ Expected GitHub Pages URLs:
 - Site: `https://shopycornltd.github.io/commit-guard-site/`
 - EULA: `https://shopycornltd.github.io/commit-guard-site/eula/`
 - Privacy: `https://shopycornltd.github.io/commit-guard-site/privacy/`
+- Security: `https://shopycornltd.github.io/commit-guard-site/security/`
 
 ## Repository Structure
 
@@ -27,6 +29,8 @@ Expected GitHub Pages URLs:
   Developer EULA
 - `privacy/index.html`
   Privacy Notice
+- `security/index.html`
+  Public security reporting and support page
 - `.github/workflows/pages.yml`
   GitHub Pages deployment workflow
 
