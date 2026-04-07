@@ -1,6 +1,6 @@
 # Commit Guard Public Site
 
-This repository hosts the public website for **Commit Guard**, the workflow-driven AI code review and commit-message automation plugin for IntelliJ by **Shopycorn Ltd**.
+This repository hosts the public website for **Commit Guard**, the workflow-driven AI code review and Platinum commit-message automation plugin for IntelliJ by **Shopycorn Ltd**.
 
 It exists separately from the private product repository so we can keep the plugin source private while still publishing:
 
@@ -13,8 +13,8 @@ It exists separately from the private product repository so we can keep the plug
 The public landing page highlights:
 
 - workflow-driven AI review
-- IntelliJ commit message generation
-- terminal commit gating and managed commit-message prefills
+- Platinum commit message generation with selectable templates
+- terminal commit gating and Platinum managed commit-message prefills
 - local and cloud provider support
 
 ## Live Site
