@@ -14,11 +14,11 @@
   --radius-lg: 20px;
   --radius-md: 16px;
   --max: 1180px;
-  --chrome-bg: linear-gradient(135deg, rgba(255, 236, 202, 0.95), rgba(255, 194, 185, 0.92) 48%, rgba(255, 224, 244, 0.9));
-  --chrome-border: rgba(255, 239, 216, 0.68);
-  --chrome-text: #18243f;
-  --chrome-muted: rgba(24, 36, 63, 0.72);
-  --chrome-logo-bg: rgba(255, 255, 255, 0.6);
+  --chrome-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(243, 247, 252, 0.95));
+  --chrome-border: rgba(156, 170, 189, 0.34);
+  --chrome-text: #1b2840;
+  --chrome-muted: rgba(27, 40, 64, 0.7);
+  --chrome-logo-bg: rgba(255, 255, 255, 0.92);
 }
 
 * {
@@ -86,8 +86,8 @@ a {
   border-radius: 18px;
   overflow: hidden;
   background: var(--chrome-logo-bg);
-  border: 1px solid rgba(255, 255, 255, 0.74);
-  box-shadow: 0 10px 22px rgba(20, 29, 51, 0.16);
+  border: 1px solid rgba(184, 195, 211, 0.72);
+  box-shadow: 0 10px 22px rgba(20, 29, 51, 0.1);
 }
 
 .brand-logo img {
