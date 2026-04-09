@@ -2,7 +2,7 @@
 
 This repository hosts the public website for **Commit Guard**, the workflow-driven AI code review and Platinum commit-message automation plugin for IntelliJ by **Shopycorn Ltd**.
 
-It exists separately from the private product repository so we can keep the plugin source private while still publishing:
+It exists as a standalone public site so we can publish:
 
 - a public product landing page
 - the Developer EULA
@@ -58,10 +58,6 @@ To use it:
 2. in GitHub, open `Settings -> Pages`
 3. set `Source` to `GitHub Actions`
 4. push to `main` or run the Pages workflow manually
-
-## Related Repositories
-
-- Product repository: [github.com/shopycornltd/commit-guard-ai](https://github.com/shopycornltd/commit-guard-ai)
 
 ## Support
 
