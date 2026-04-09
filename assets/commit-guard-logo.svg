@@ -1,25 +1,57 @@
 <svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="site-bg" x1="18" y1="16" x2="112" y2="112" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#12203A"/>
-      <stop offset="1" stop-color="#0A1020"/>
+    <linearGradient id="shield-base" x1="20" y1="18" x2="108" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B3D66"/>
+      <stop offset="0.52" stop-color="#162546"/>
+      <stop offset="1" stop-color="#0C1430"/>
     </linearGradient>
-    <linearGradient id="site-shield" x1="40" y1="28" x2="90" y2="104" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#17325F"/>
-      <stop offset="1" stop-color="#101B34"/>
+    <linearGradient id="shield-left" x1="24" y1="28" x2="66" y2="108" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#24375F"/>
+      <stop offset="1" stop-color="#0E1736"/>
     </linearGradient>
-    <linearGradient id="site-accent" x1="44" y1="32" x2="88" y2="86" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#40E1BF"/>
-      <stop offset="1" stop-color="#8FB6FF"/>
+    <linearGradient id="shield-right" x1="64" y1="22" x2="108" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8FA1C5"/>
+      <stop offset="0.22" stop-color="#E4ECF8"/>
+      <stop offset="0.48" stop-color="#6E82AB"/>
+      <stop offset="1" stop-color="#1A284B"/>
     </linearGradient>
+    <linearGradient id="shield-shadow" x1="64" y1="16" x2="64" y2="122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.22"/>
+      <stop offset="0.3" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.18"/>
+    </linearGradient>
+    <filter id="badge-shadow" x="56" y="52" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dx="3" dy="3"/>
+      <feGaussianBlur stdDeviation="2.5"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0627451 0 0 0 0 0.113725 0 0 0 0 0.243137 0 0 0 0.35 0"/>
+      <feBlend in2="SourceGraphic" result="shape"/>
+    </filter>
+    <clipPath id="shield-clip">
+      <path d="M64 18C78.2 26.8 94 28 108 28V67C108 86.8 94.4 104.2 64 122C33.6 104.2 20 86.8 20 67V28C34 28 49.8 26.8 64 18Z"/>
+    </clipPath>
   </defs>
-  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#site-bg)"/>
-  <rect x="8.75" y="8.75" width="110.5" height="110.5" rx="27.25" stroke="#26385B" stroke-width="1.5"/>
-  <path d="M64 22L92 33.5V59.5C92 79.6 80.3 98.2 64 108C47.7 98.2 36 79.6 36 59.5V33.5L64 22Z" fill="url(#site-shield)" stroke="url(#site-accent)" stroke-width="3"/>
-  <path d="M50 44V70C50 77.7 56.3 84 64 84H77" stroke="#D9F5FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M78 52V84" stroke="#D9F5FF" stroke-width="6" stroke-linecap="round"/>
-  <circle cx="50" cy="44" r="5.5" fill="#40E1BF"/>
-  <circle cx="78" cy="52" r="5.5" fill="#8FB6FF"/>
-  <circle cx="78" cy="84" r="5.5" fill="#F6B24A"/>
-  <path d="M56 66L64 74L82 58" stroke="#40E1BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g clip-path="url(#shield-clip)">
+    <path d="M64 18C78.2 26.8 94 28 108 28V67C108 86.8 94.4 104.2 64 122C33.6 104.2 20 86.8 20 67V28C34 28 49.8 26.8 64 18Z" fill="url(#shield-base)"/>
+    <path d="M20 28L64 18V122C33.6 104.2 20 86.8 20 67V28Z" fill="url(#shield-left)"/>
+    <path d="M64 18L108 28V67C108 86.8 94.4 104.2 64 122V18Z" fill="url(#shield-right)"/>
+    <path d="M64 18V122" stroke="#DDE6F7" stroke-opacity="0.28" stroke-width="1.5"/>
+    <path d="M64 18C78.2 26.8 94 28 108 28V67C108 86.8 94.4 104.2 64 122C33.6 104.2 20 86.8 20 67V28C34 28 49.8 26.8 64 18Z" fill="url(#shield-shadow)"/>
+  </g>
+
+  <path d="M64 18C78.2 26.8 94 28 108 28V67C108 86.8 94.4 104.2 64 122C33.6 104.2 20 86.8 20 67V28C34 28 49.8 26.8 64 18Z" stroke="#E6EDFA" stroke-opacity="0.22" stroke-width="1.5"/>
+
+  <path d="M40 60H61.5V43" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M61.5 43L82 63" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 60V84" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="40" cy="60" r="6.5" fill="#FFFFFF"/>
+  <circle cx="61.5" cy="43" r="6.5" fill="#FFFFFF"/>
+  <circle cx="40" cy="84" r="6.5" fill="#FFFFFF"/>
+
+  <g filter="url(#badge-shadow)">
+    <circle cx="86" cy="80" r="21" fill="#FFFFFF"/>
+    <circle cx="86" cy="80" r="18.5" stroke="#D3DBEA" stroke-width="1.5"/>
+    <path d="M75 80H94" stroke="#27385E" stroke-width="6" stroke-linecap="round"/>
+    <path d="M88 72L96 80L88 88" stroke="#27385E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>
